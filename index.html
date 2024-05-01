@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="blur"></div>
+    <main>
+      <div class="title">
+        <h1>Le Juste Prix</h1>
+      </div>
+      <div class="content">
+        <p>
+          Prêt à jouer au chaud et froid numérique ?<br />
+          Tente ta chance et découvre si le chiffre mystère est plus frisquet ou
+          plus brûlant que ta dernière proposition !<br />
+          Trouve le nombre magique entre 0 et 100 et deviens le champion du
+          juste prix !
+        </p>
+      </div>
+      <div class="record">
+        <div id="bestScore"></div>
+      </div>
+
+      <div class="number">
+        <label>Ton chiffre</label>
+        <div class="inputNumber">
+          <div class="buttonDecrement"><button id="decrement">-</button></div>
+
+          <input type="text" id="guess" value="0" />
+          <div class="btnIncrement">
+            <button id="increment">+</button>
+          </div>
+        </div>
+        <div class="btnSubmit">
+          <button id="submitBtn">Soumettre</button>
+        </div>
+      </div>
+
+      <div id="output"></div>
+      <div id="replayConfirmation" style="display: none">
+        <p>Voulez-vous rejouer ?</p>
+        <button id="replayYes">Oui</button>
+        <button id="replayNo">Non</button>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="/index.js"></script>
+</html>
